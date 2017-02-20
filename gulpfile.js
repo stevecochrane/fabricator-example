@@ -44,7 +44,7 @@ const config = {
   },
   images: {
     toolkit: {
-      src: ['src/assets/toolkit/images/**/*', 'src/favicon.ico'],
+      src: ['src/assets/toolkit/images/**/*'],
       dest: 'dist/assets/toolkit/images',
       watch: 'src/assets/toolkit/images/**/*',
     },
@@ -109,15 +109,10 @@ gulp.task('scripts', (done) => {
 
 
 // images
-gulp.task('images', ['favicon'], () => {
+gulp.task('images', () => {
   return gulp.src(config.images.toolkit.src)
     .pipe(imagemin())
     .pipe(gulp.dest(config.images.toolkit.dest));
-});
-
-gulp.task('favicon', () => {
-  return gulp.src('src/favicon.ico')
-  .pipe(gulp.dest(config.dest));
 });
 
 
