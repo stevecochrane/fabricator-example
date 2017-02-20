@@ -7,17 +7,18 @@ fabricator: true
 
 <p>This UI toolkit is a highly-modular design system for rapid web page development. It contains different materials that can be assembled into more complex page layouts.</p>
 
-<h2>Color</h2>
+<h2>Colors</h2>
 
 {{#each toolkit.colors}}
-	<div class="f-color-chips">
-	{{#each this}}
-		<div class="f-color-chip">
-			<div class="f-color-chip__name">{{@key}}</div>
-			<div class="f-color-chip__color">{{this}}</div>
-		</div>
-	{{/each}}
-	</div>
+    <h3>{{@key}}</h3>
+    <div class="f-color-chips">
+        {{#each this}}
+            <div class="f-color-chip">
+                <div class="f-color-chip__name">{{@key}}</div>
+                <div class="f-color-chip__color">{{this}}</div>
+            </div>
+        {{/each}}
+    </div>
 {{/each}}
 
 <h2>Typography</h2>

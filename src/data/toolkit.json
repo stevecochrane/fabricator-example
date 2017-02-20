@@ -1,13 +1,21 @@
 {
     "colors": {
-        "primary": {
-            "Dark": "rgb(30, 30, 30)",
-            "Light": "rgb(242, 242, 242)"
+        "Backgrounds": {
+            "Body": "#ffffff",
+            "Frame 1": "#ff6c6a",
+            "Frame 2": "#ffbb72"
         },
-        "secondary": {
-            "Red": "rgb(201, 55, 6)",
-            "Yellow": "rgb(252, 207, 80)",
-            "Blue": "rgb(39, 102, 143)"
+        "Structure": {
+            "Border": "rgba(0, 0, 0, 0.1)",
+            "Shadow": "rgba(0, 0, 0, 0.25)"
+        },
+        "Text": {
+            "Base": "#484848",
+            "Light": "#9f9f9f"
+        },
+        "Links": {
+            "Default": "#ff5b59",
+            "Hover": "#ff8e8c"
         }
     }
 }
