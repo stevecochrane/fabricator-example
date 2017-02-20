@@ -5,6 +5,10 @@
   "author": "Steve Cochrane <steve@stevecochrane.com>",
   "license": "MIT",
   "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevecochrane/stevecochrane.com-style-guide.git"
+  },
   "scripts": {
     "prestart": "npm install",
     "build": "npm run prestart && gulp",
