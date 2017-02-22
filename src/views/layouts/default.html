@@ -1,41 +1,30 @@
 <!doctype html>
 <html lang="en">
-<head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="https://cloud.typography.com/6084432/761002/css/fonts.css">
+        {{#if fabricator}}
+            <link rel="stylesheet" href="/style-guide/assets/fabricator/styles/f.css">
+        {{/if}}
+        <link rel="stylesheet" href="/style-guide/assets/toolkit/styles/toolkit.css">
+    </head>
+    <body>
+        {{#if fabricator}}
+            {{> f-icons}}
+            {{> f-menu}}
+            <div class="f-container">
+                {{> f-control-bar}}
+        {{/if}}
 
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+        {% body %}
 
-	<title>{{title}}</title>
-
-	{{#if fabricator}}<link rel="stylesheet" href="/style-guide/assets/fabricator/styles/f.css">{{/if}}
-
-	<!-- toolkit styles -->
-	<link rel="stylesheet" href="/style-guide/assets/toolkit/styles/toolkit.css">
-	<!-- /toolkit styles -->
-
-</head>
-<body>
-
-	{{#if fabricator}}
-		{{> f-icons}}
-		{{> f-menu}}
-		<div class="f-container">
-			{{> f-control-bar}}
-	{{/if}}
-
-
-	{% body %}
-
-
-	{{#if fabricator}}
-		</div>
-	<script src="/style-guide/assets/fabricator/scripts/f.js"></script>
-	{{/if}}
-
-	<!-- toolkit scripts -->
-	<script src="/style-guide/assets/toolkit/scripts/toolkit.js"></script>
-	<!-- /toolkit scripts -->
-
-</body>
+        {{#if fabricator}}
+            </div>
+        <script src="/style-guide/assets/fabricator/scripts/f.js"></script>
+        {{/if}}
+        <script src="/style-guide/assets/toolkit/scripts/toolkit.js"></script>
+    </body>
 </html>
